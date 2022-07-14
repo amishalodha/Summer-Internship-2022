@@ -68,19 +68,20 @@ Q 5 How to define Generic type for Classes.
 
   
 Q 6 Define the types in typescript for the given following JavaScript code.
+```javascript
   
   class List{
-    name: "aman";
-    description: "book";
-    done: "boolean";
+    name: string;
+    description: string;
+    done: boolean;
   }
  var todos :List[]= [];
- function add(name:"aman" ,description :"book") :number {
+ function add(name:string , description :string) :number {
     return todos.push({
-        name: "aman",description:"book",
+        name: string ,description:string,
         done: false,
-        })
-    };
+        });
+    }
 function remove(index:number) : List[]{
         return todos.splice(index, 1);
     }
@@ -91,11 +92,12 @@ function remove(index:number) : List[]{
         console.log(index + " -" + todo.name);
         });
         }
-        function update(index:number , name: aman, description:book):List {
+        function update(index:number , name: string, description:string):List {
             todos[index].name = name;
             todos[index].description = description;return todos[index];
             }
-            console.log(add("Make a PR", Do Some work));
+            console.log(add("work complete"));
             list();
 
+```
 
